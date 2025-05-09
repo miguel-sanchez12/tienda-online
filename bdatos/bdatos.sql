@@ -55,30 +55,3 @@ CREATE TABLE t_lineapedidos (
 );
 
 
-INSERT INTO t_categorias (nombre) VALUES 
-('Electrónica'),
-('Ropa'),
-('Hogar'),
-('Deportes');
-
-INSERT INTO t_usuarios (nombre, apellidos, email, password, rol, imagen) VALUES 
-('Juan', 'Pérez López', 'juan@example.com', 'password123', 0, 'default.jpg'),
-('María', 'González Ruiz', 'maria@example.com', 'password456', 0, 'default.jpg'),
-('Admin', 'Sistema', 'admin@system.com', 'admin123', 1, 'admin.jpg');
-
-INSERT INTO t_productos (id_categoria, nombre, precio, stock, oferta, fecha, imagen) VALUES 
-(1, 'Smartphone XYZ', 299.99, 50, '10%', '2025-05-01', 'smartphone.jpg'),
-(1, 'Laptop ABC', 899.99, 20, NULL, '2025-05-01', 'laptop.jpg'),
-(2, 'Camiseta casual', 19.99, 100, '20%', '2025-05-01', 'camiseta.jpg'),
-(3, 'Lámpara de mesa', 39.99, 30, NULL, '2025-05-01', 'lampara.jpg'),
-(4, 'Balón de fútbol', 29.99, 45, '15%', '2025-05-01', 'balon.jpg');
-
-INSERT INTO t_pedidos (id_usuario, ciudad, direccion, costo, estado, fecha, hora) VALUES 
-(1, 'Madrid', 'Calle Principal 123', 339.98, 'Entregado', '2025-05-02', '14:30:00'),
-(2, 'Barcelona', 'Avenida Central 456', 59.98, 'En proceso', '2025-05-03', '10:15:00');
-
-INSERT INTO t_lineapedidos (id_pedido, id_producto, unidades) VALUES 
-(1, 1, 1),  
-(1, 4, 1),  
-(2, 3, 2), 
-(2, 5, 1);
