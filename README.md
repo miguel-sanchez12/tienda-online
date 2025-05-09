@@ -1,2 +1,1 @@
-# tienda_mundo
-Ejercicio_intructor_washintong
+# tienda_online
